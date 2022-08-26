@@ -38,3 +38,5 @@ Route::post('/user/update', [UserController::class, 'a']);
 Route::post('user/delete', [UserControllerTest2::class, 'b']);
 
 Route::post('/post/create', [PostController::class, 'store'])->middleware('auth:api');
+
+Route::post('/user/update', [UserController::class, 'a']);
