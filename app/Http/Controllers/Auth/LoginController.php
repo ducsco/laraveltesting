@@ -64,8 +64,8 @@ class LoginController extends Controller
         //     throw new Error("Ten dang nhap hoac mat khau sai");
         // }
 
-        // $token = auth()->user()->createToken('access_token')->accessToken;
-        $token = auth()->user()->accessToken;
+        $token = auth()->user()->createToken('access_token')->accessToken;
+        // $token = auth()->user()->accessToken;
         return response([
             'user' => auth()->user(),
             'token' => $token
